@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+} 
+
+/*agregando imagen de fondo */
+body{
+    background-image: url("https://images.unsplash.com/photo-1512848828020-55b83a5fe528?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=614&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    font-size: small;
+}
+
+#image{
+    height: 400px;
+    border-radius: 10%;
+    margin: 20px;
+    display: flex;
+    border: #111, solid, 1px;
+}
+
+
+
+/* encabezado */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(37, 36, 36);
+    justify-content: space-around;
+}
+
+ul.topnav li {
+    float: left;
+    margin-right: 10px;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #3aa848;}
+
+/* ul.topnav li.right {float: right;} */
+
+button {
+    /* float: right; */
+    width: 150px;
+    background-color: #3aa848;
+    color: #f1f1f1;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
